@@ -1,5 +1,5 @@
 import  React from 'react'
-import { View, Text, StyleSheet, FlatList } from 'react-native'
+import { View, Text, StyleSheet, FlatList, ScrollView } from 'react-native'
 import Hr from './Hr'
 
 const Aula03 = () => {
@@ -22,6 +22,7 @@ const Aula03 = () => {
     )
 
     return(
+        <ScrollView>
         <View style={styles.container}>
             <Text style={styles.texto}>Aula 03 | Listas com FlatList</Text>
             <Text style={styles.textin}>Aprendendo a manipular uma lista em React Native e o componente</Text>
@@ -33,19 +34,21 @@ const Aula03 = () => {
                     <View key={linha.id} style={styles.itemContainer}>
                         <Text style={styles.itemTurma}>{linha.turma}</Text>
                         <Text style={styles.itemAlunos}>Alunos: {linha.alunos}</Text>
+                        <Text style={styles.itemPontos}>Pontos: {linha.pontos}</Text>
                     </View>
                 ))
-            }
+            }<br/>
             <Hr/>
             <Text style={styles.textin}>Lista com FlatList</Text>
             {/* lista de objetos com FlatList */}
             <FlatList 
+                style={{width: '100%'}}
                 data={turmas} //passar o vetor de objetos como propriedade 'data'
                 renderItem={exibirItensLista} //passar a função que vai exibir os itens da lista como propriedade 'renderItem'
                 keyExtractor={(item) => item.id} //passar um id unico para cada item da lista como propriedade 'keyExtractor'
             />
-
         </View>
+        </ScrollView>
     )
 }
 
@@ -56,6 +59,7 @@ const styles = StyleSheet.create({
         padding: 60,
         borderRadius: 15,
         marginBottom:20,
+        paddingBottom: 20,
     },
     texto:{
         color: '#000',
@@ -93,7 +97,7 @@ const styles = StyleSheet.create({
     itemPontos: {
         fontSize: 16,
         color: '#555',
-    }
+    },
 })
 
 export default Aula03

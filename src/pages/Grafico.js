@@ -7,8 +7,8 @@ const Grafico = ({navigation}) => {
         <View style={{flex:1, backgroundColor:'#8c9e28', alignItems:'center', justifyContent:'center'}}>    
             <Text style={{fontSize: 30}}>Tela de Grafico</Text>
             {/* nos botoes, no onPress, dizemos para qual tela queremos ir */}
-            <Button title='Ir para a tela de relatorio' onPress={() => navigation.navigate('relatorio')}/>
-            <Button title='Ir para a tela de cadastro' onPress={() => navigation.navigate('cadastro')}/>
+            <Button title='Ir para a tela de relatorio' onPress={() => navigation.navigate('Relatorio')}/>
+            <Button title='Ir para a tela de cadastro' onPress={() => navigation.navigate('Cadastro')}/>
             <Button title='Voltar' onPress={() => navigation.goBack()}/>
         </View>
     )

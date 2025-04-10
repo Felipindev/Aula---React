@@ -1,8 +1,10 @@
+import NavDrawer from "./src/pages/NavDrawer";
 import NavStack from "./src/pages/NavStack";
 
 const App = () => {
-  return(
+  return( 
     <NavStack />
+    // <NavDrawer/>
   ) 
 };
 export default App;

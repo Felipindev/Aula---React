@@ -1,10 +1,17 @@
+import { NavigationContainer } from '@react-navigation/native'
+import NavBottomtabs from "./src/pages/NavBottomTabs";
 import NavDrawer from "./src/pages/NavDrawer";
 import NavStack from "./src/pages/NavStack";
+import NavTopTabs from "./src/pages/NavTopTabs";
 
 const App = () => {
   return( 
-    <NavStack />
-    // <NavDrawer/>
+    <NavigationContainer>
+      <NavStack />
+      {/* // <NavDrawer/> */}
+      {/* <NavTopTabs/> */}
+      {/* <NavBottomtabs/> */}
+    </NavigationContainer>
   ) 
 };
 export default App;

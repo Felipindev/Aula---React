@@ -1,14 +1,15 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const Aula05 = () =>{
+const Aula06 = () =>{
     return(
         <View style={styles.container}>
-            <Text style={styles.title}>Aula 05 | Estilos para o Lista_Compras</Text>
-            <Text style={styles.title2}>Ajustando e estilizando o app</Text>
+            <Text style={styles.title}>Aula 06 | Estilos de navegação Drawer e Icons</Text>
+            <Text style={styles.title2}>Aprendendo a programar na navegação estilo Drawer e aprendendo icones no app</Text>
         </View>
     )
 } 
+export default Aula06;
 
 const styles = StyleSheet.create({
     container:{
@@ -28,4 +29,3 @@ const styles = StyleSheet.create({
         color: '#333'
     }
 })
-export default Aula05;

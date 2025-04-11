@@ -11,6 +11,8 @@ import Aula4 from '../components/Aula04'
 import Aula05 from '../components/Aula05'
 //import dos icons
 import {Ionicons, Entypo} from '@expo/vector-icons';
+import Aula06 from "../components/Aula06";
+import Aula07 from "../components/Aula07";
 
 // configuração do drawer navvigator 
 const Drawer = createDrawerNavigator()
@@ -129,6 +131,34 @@ const NavDrawer = () => {
                 />
                 <Drawer.Screen name='Aula5' component={Aula05}
                     options={{
+                        // aqui criamos um objeto com as configurações do estilo do icone do drawer
+                        drawerIcon: () => (
+                            <Ionicons name='bookmark-outline' size={24} color='#fff'/>
+                        ),
+                        // aqui criamos um objeto com as configurações do estilo do texto do drawer
+                        drawerLabelStyle: {
+                            fontSize: 15,
+                            fontWeight: 'bold',
+                            color: '#f1f1f1',
+                        }
+                    }}
+                />
+                <Drawer.Screen name='Aula6' component={Aula06} 
+                    options={{
+                        // aqui criamos um objeto com as configurações do estilo do icone do drawer
+                        drawerIcon: () => (
+                            <Ionicons name='bookmark-outline' size={24} color='#fff'/>
+                        ),
+                        // aqui criamos um objeto com as configurações do estilo do texto do drawer
+                        drawerLabelStyle: {
+                            fontSize: 15,
+                            fontWeight: 'bold',
+                            color: '#f1f1f1',
+                        }
+                    }}
+                />
+                <Drawer.Screen name='Aula7' component={Aula07}
+                options={{
                         // aqui criamos um objeto com as configurações do estilo do icone do drawer
                         drawerIcon: () => (
                             <Ionicons name='bookmark-outline' size={24} color='#fff'/>
